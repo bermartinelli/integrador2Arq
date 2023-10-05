@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+
+    <persistence-unit name= "Integrador2">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+
+            <!-- Propiedades de configuracion de JDBC para Derby /-->
+
+
+            <!--property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:exampleDBJPA;create=true"/>
+
+            < Propiedades de configuracion de JDBC para MySQL /-->
+
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Integrador2?createDatabaseIfNotExist=true"/>
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value=""/>
+
+
+            <!-- Propiedad para la generacion automatica del esquema de base de datos -->
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
+            <!-- <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema" /> -->
+            <!--property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect"/-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="show_sql" value="true"/>
+
+
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
