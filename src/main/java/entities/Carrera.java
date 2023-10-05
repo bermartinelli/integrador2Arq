@@ -18,7 +18,7 @@ public class Carrera {
     private int duracion;
 
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "Carrera")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "carrera")
     private Set<Estudiante_Carrera> estudiantes;
 
     public Carrera(String nombre, int duracion){

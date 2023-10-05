@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c0da214-0c6f-47bc-82ac-f9d2a13c2f4f" name="Changes" comment="agrego entidades">
-      <change afterPath="$PROJECT_DIR$/src/main/java/InterfacesRepository/CarreraRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InterfacesRepository/EstudianteCarreraRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InterfacesRepository/EstudianteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/FactoryEntityManager.java" afterDir="false" />
+    <list default="true" id="1c0da214-0c6f-47bc-82ac-f9d2a13c2f4f" name="Changes" comment="agrego repository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/CarreraRepositoryImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/EstudianteCarreraRepositoryImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/EstudianteRepositoryImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CarreraDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CarreraDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Carrera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Estudiante_Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Estudiante_Carrera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/FactoryEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/FactoryEntityManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +55,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="TP2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696505420799</updated>
-      <workItem from="1696505422165" duration="8989000" />
+      <workItem from="1696505422165" duration="13289000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -84,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696513074415</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="agrego repository">
+      <option name="closed" value="true" />
+      <created>1696516178731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696516178731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +121,17 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="acomodo gitignore" />
     <MESSAGE value="agrego entidades" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrego entidades" />
+    <MESSAGE value="agrego repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego repository" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.AnnotationException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

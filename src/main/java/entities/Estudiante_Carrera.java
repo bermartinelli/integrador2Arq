@@ -1,10 +1,11 @@
 package entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 @Entity
-public class Estudiante_Carrera {
+public class Estudiante_Carrera implements Serializable {
     @Id
     @ManyToOne(targetEntity = Estudiante.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "estudiante_id", nullable = false)

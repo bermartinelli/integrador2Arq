@@ -30,7 +30,7 @@ public class Estudiante {
     @Column
     private String ciudad;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "Estudiante")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "estudiante")
     private Set<Estudiante_Carrera> carreras;
 
     public Estudiante() {
