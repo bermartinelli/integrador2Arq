@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c0da214-0c6f-47bc-82ac-f9d2a13c2f4f" name="Changes" comment="agrego repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/CarreraRepositoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/EstudianteCarreraRepositoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/EstudianteRepositoryImp.java" afterDir="false" />
+    <list default="true" id="1c0da214-0c6f-47bc-82ac-f9d2a13c2f4f" name="Changes" comment="agrega main corriendo con la creacion de la db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CarreraDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CarreraDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Carrera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InterfacesRepository/EstudianteCarreraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InterfacesRepository/EstudianteCarreraRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/CarreraRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/CarreraRepositoryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/EstudianteCarreraRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/EstudianteCarreraRepositoryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/EstudianteRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/EstudianteRepositoryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/EstudianteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/EstudianteDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Estudiante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/Estudiante_Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Estudiante_Carrera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/FactoryEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/FactoryEntityManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696505420799</updated>
-      <workItem from="1696505422165" duration="13289000" />
+      <workItem from="1696505422165" duration="19202000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -111,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696516178731</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="agrega main corriendo con la creacion de la db">
+      <option name="closed" value="true" />
+      <created>1696525891979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696525891979</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +129,8 @@
     <MESSAGE value="acomodo gitignore" />
     <MESSAGE value="agrego entidades" />
     <MESSAGE value="agrego repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrego repository" />
+    <MESSAGE value="agrega main corriendo con la creacion de la db" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrega main corriendo con la creacion de la db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

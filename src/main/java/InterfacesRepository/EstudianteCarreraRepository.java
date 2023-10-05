@@ -1,7 +1,7 @@
 package InterfacesRepository;
 
 import entities.*;
-import java.security.Timestamp;
+import java.sql.Timestamp;
 import java.util.List;
 
 import dto.*;

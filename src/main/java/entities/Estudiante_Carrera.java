@@ -38,7 +38,7 @@ public class Estudiante_Carrera implements Serializable {
         this(estudiante, carrera, fechaInscripcion, null);
     }
 
-    public Integer getLU() {
+    public Integer getLu() {
         return estudiante.getLu();
     }
 
