@@ -49,12 +49,13 @@ public class EstudianteDTO {
     }
 
     public String getNombreCompleto(){
-        return this.apellido.toUpperCase() + ", " + this.nombre;
+        return this.apellido.toUpperCase() + " " + this.nombre;
     }
 
     @Override
     public String toString() {
-        return "Nombre: " + getNombreCompleto() + ", edad: " + edad	+ ", ciudad de residencia: " + ciudad + ", genero: " +
-                genero + ", dni: " + dni + ", libreta: " + lu;
+        return "Nombre: " + getNombreCompleto() + ", edad: " + edad	+ ", ciudad: " + ciudad + " lu: " + lu + "\n";
     }
+
+
 }

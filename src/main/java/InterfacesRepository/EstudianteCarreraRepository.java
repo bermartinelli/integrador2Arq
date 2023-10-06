@@ -8,8 +8,7 @@ import dto.*;
 
 public interface EstudianteCarreraRepository {
 
-    void matricularEstudiante(int idEstudiante, int idCarrera, Timestamp inscripcion, Timestamp fechaEgreso);
+    void matricularEstudiante(int idEstudiante, int idCarrera, int inscripcion, Integer fechaEgreso);
     List<CarreraDTO> getCarrerasConInscriptos();
-    List<EstudianteCarreraDTO> getEstudiantesCarreraCiudad(int idCarrera, String ciudad);
-
+    List<EstudianteDTO> getEstudiantesCarreraCiudad(int idCarrera, String ciudad);
 }

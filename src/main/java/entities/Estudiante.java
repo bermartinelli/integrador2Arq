@@ -52,6 +52,10 @@ public class Estudiante {
         return nombre;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public int getDni() {
         return dni;
     }

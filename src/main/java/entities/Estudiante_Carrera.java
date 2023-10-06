@@ -2,7 +2,6 @@ package entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Timestamp;
 
 @Entity
 public class Estudiante_Carrera implements Serializable {
@@ -17,25 +16,25 @@ public class Estudiante_Carrera implements Serializable {
     private Carrera carrera;
 
     @Column(name = "fecha_inscripcion")
-    private Timestamp fechaInscripcion;
+    private int fechaInscripcion;
 
     @Column(name = "fecha_egreso")
-    private Timestamp fechaEgreso;
+    private Integer fechaEgreso;
 
 
     public Estudiante_Carrera() {
 
     }
 
-    public Estudiante_Carrera(Estudiante estudiante, Carrera carrera, Timestamp inscripcion, Timestamp egreso) {
+    public Estudiante_Carrera(Estudiante estudiante, Carrera carrera, int inscripcion, Integer egreso) {
         this.estudiante = estudiante;
         this.carrera = carrera;
         this.fechaInscripcion = inscripcion;
         this.fechaEgreso = egreso;
     }
 
-    public Estudiante_Carrera(Estudiante estudiante, Carrera carrera, Timestamp fechaInscripcion) {
-        this(estudiante, carrera, fechaInscripcion, null);
+    public Estudiante_Carrera(Estudiante estudiante, Carrera carrera, Integer inscripcion) {
+        this(estudiante, carrera, inscripcion, null);
     }
 
     public Integer getLu() {
