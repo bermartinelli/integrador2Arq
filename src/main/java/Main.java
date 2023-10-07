@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws SQLException, IOException {
         EntityManager em = FactoryEntityManager.createConnection();
 
-            Estudiante e1 = new Estudiante(41825401, "BERNARDO", "MARTINELLI", 28, "M", "OLAVARRIA", 1234);
+        Estudiante e1 = new Estudiante(41825401, "BERNARDO", "MARTINELLI", 28, "M", "OLAVARRIA", 1234);
         Estudiante e2 = new Estudiante(44425404, "PEDRO", "SANCHEZ", 23, "M", "BOLIVAR", 1235);
         Estudiante e3 = new Estudiante(41825404, "JUANA", "GOMEZ", 21, "F", "ALVEAR", 1236);
         Estudiante e4 = new Estudiante(36823412, "MARIO", "RODRIGUEZ", 22, "M", "OLAVARRIA", 1237);
@@ -30,12 +30,12 @@ public class Main {
         Carrera c4 = new Carrera("LIC_FISICA", 5);
         Carrera c5 = new Carrera("ING_INDUSTRIAL", 5);
 
-        /*Estudiante_Carrera ec1 = new Estudiante_Carrera(e1, c1, 2020);
+        Estudiante_Carrera ec1 = new Estudiante_Carrera(e1, c1, 2020);
         Estudiante_Carrera ec2 = new Estudiante_Carrera(e1, c2, 2015,2018);
         Estudiante_Carrera ec3 = new Estudiante_Carrera(e2, c4, 2021);
         Estudiante_Carrera ec4 = new Estudiante_Carrera(e3, c4, 2012,2018);
         Estudiante_Carrera ec5 = new Estudiante_Carrera(e4, c4, 2015,2017);
-        Estudiante_Carrera ec6 = new Estudiante_Carrera(e9, c3, 2020);*/
+        Estudiante_Carrera ec6 = new Estudiante_Carrera(e9, c3, 2020);
 
 
         EstudianteRepositoryImp EstRep = new EstudianteRepositoryImp(em);
@@ -81,6 +81,9 @@ public class Main {
 
         System.out.println("Inciso 2g)" + "\n");
         System.out.println(EstCarr.getEstudiantesCarreraCiudad(1,"OLAVARRIA"));
+
+        System.out.println("Inciso 3)" + "\n");
+        System.out.println(EstCarr.getInformeCarreras());
 
         FactoryEntityManager.closeConnection();
         em.close();

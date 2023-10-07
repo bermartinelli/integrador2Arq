@@ -1,13 +1,12 @@
 package Repository;
 
 import InterfacesRepository.EstudianteCarreraRepository;
-import dto.CarreraDTO;
-import dto.EstudianteCarreraDTO;
+import dto.CarreraInformeDTO;
+import dto.CarreraInscriptosDTO;
 import dto.EstudianteDTO;
 import entities.Carrera;
 import entities.Estudiante;
 import entities.Estudiante_Carrera;
-import java.sql.Timestamp;
 
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
@@ -32,13 +31,13 @@ public class EstudianteCarreraRepositoryImp implements EstudianteCarreraReposito
     }
 
     @Override
-    public List<CarreraDTO> getCarrerasConInscriptos() {
+    public List<CarreraInscriptosDTO> getCarrerasConInscriptos() {
         this.em.getTransaction().begin();
-        String jpql = "SELECT NEW dto.CarreraDTO(c.nombre, COUNT(ec.estudiante)) " +
+        String jpql = "SELECT NEW dto.CarreraInscriptosDTO(c.nombre, COUNT(ec.estudiante)) " +
                 "FROM Estudiante_Carrera ec JOIN ec.carrera c" +
                 " group by ec.carrera ORDER BY COUNT(ec.estudiante) DESC ";
-        TypedQuery<CarreraDTO> query = em.createQuery(jpql, CarreraDTO.class);
-        List<CarreraDTO> resultList = query.getResultList();
+        TypedQuery<CarreraInscriptosDTO> query = em.createQuery(jpql, CarreraInscriptosDTO.class);
+        List<CarreraInscriptosDTO> resultList = query.getResultList();
         this.em.getTransaction().commit();
         return resultList;
     }
@@ -57,6 +56,20 @@ public class EstudianteCarreraRepositoryImp implements EstudianteCarreraReposito
         List<EstudianteDTO> resultList = query.getResultList();
         this.em.getTransaction().commit();
         return resultList;
-
     }
+
+    @Override
+    public List<CarreraInformeDTO> getInformeCarreras() {
+        this.em.getTransaction().begin();
+        String jpql = "SELECT NEW dto.CarreraInformeDTO(c.nombre, eca.fechaInscripcion, COUNT(eca.estudiante), SUM(CASE WHEN eca.fechaEgreso IS NOT NULL THEN 1 ELSE 0 END)) " +
+                "FROM Carrera c LEFT JOIN c.estudiantes eca " +
+                " GROUP BY c.nombre, eca.fechaInscripcion " +
+                " ORDER BY c.nombre ASC, eca.fechaInscripcion ASC";
+        TypedQuery<CarreraInformeDTO> query = em.createQuery(jpql, CarreraInformeDTO.class);
+        List<CarreraInformeDTO> resultList = query.getResultList();
+        this.em.getTransaction().commit();
+        return resultList;
+    }
+
+
 }

@@ -1,7 +1,5 @@
 package InterfacesRepository;
 
-import entities.*;
-import java.sql.Timestamp;
 import java.util.List;
 
 import dto.*;
@@ -9,6 +7,8 @@ import dto.*;
 public interface EstudianteCarreraRepository {
 
     void matricularEstudiante(int idEstudiante, int idCarrera, int inscripcion, Integer fechaEgreso);
-    List<CarreraDTO> getCarrerasConInscriptos();
+    List<CarreraInscriptosDTO> getCarrerasConInscriptos();
     List<EstudianteDTO> getEstudiantesCarreraCiudad(int idCarrera, String ciudad);
+
+    List<CarreraInformeDTO> getInformeCarreras();
 }

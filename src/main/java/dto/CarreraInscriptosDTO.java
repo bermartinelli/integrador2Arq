@@ -1,11 +1,10 @@
 package dto;
 
-import entities.Carrera;
-public class CarreraDTO {
+public class CarreraInscriptosDTO {
     private String nombre;
     private long inscriptos;
 
-    public CarreraDTO(String nombre, long inscriptos) {
+    public CarreraInscriptosDTO(String nombre, long inscriptos) {
         this.nombre = nombre;
         this.inscriptos = inscriptos;
     }
@@ -28,6 +27,6 @@ public class CarreraDTO {
 
     @Override
     public String toString() {
-        return "Carrera: " + nombre + ", Inscriptos=" + inscriptos + "\n";
+        return "Carrera: " + nombre + ", Nro inscriptos:" + inscriptos + "\n";
     }
 }
